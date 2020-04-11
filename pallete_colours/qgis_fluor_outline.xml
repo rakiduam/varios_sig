@@ -1,7 +1,7 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="1">
   <symbols>
-    <symbol name="outline 1 #65ffff" force_rhr="0" tags="Fluor Outline" clip_to_extent="1" type="fill" alpha="1">
+    <symbol favorite="1" name="outline 1  #65ffff" force_rhr="0" tags="Neon" clip_to_extent="1" type="fill" alpha="1">
       <layer class="SimpleLine" enabled="1" pass="0" locked="0">
         <prop v="square" k="capstyle"/>
         <prop v="5;2" k="customdash"/>
@@ -11,7 +11,7 @@
         <prop v="bevel" k="joinstyle"/>
         <prop v="101, 255, 255, 255" k="line_color"/>
         <prop v="solid" k="line_style"/>
-        <prop v="0.5" k="line_width"/>
+        <prop v="0.96" k="line_width"/>
         <prop v="MM" k="line_width_unit"/>
         <prop v="0" k="offset"/>
         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -28,7 +28,7 @@
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="outline 2 #00ff15" force_rhr="0" tags="Fluor Outline" clip_to_extent="1" type="fill" alpha="1">
+    <symbol favorite="1" name="outline 2 #00ff15" force_rhr="0" tags="Neon" clip_to_extent="1" type="fill" alpha="1">
       <layer class="SimpleLine" enabled="1" pass="0" locked="0">
         <prop v="square" k="capstyle"/>
         <prop v="5;2" k="customdash"/>
@@ -38,7 +38,7 @@
         <prop v="bevel" k="joinstyle"/>
         <prop v="0, 255, 21, 255" k="line_color"/>
         <prop v="solid" k="line_style"/>
-        <prop v="0.5" k="line_width"/>
+        <prop v="0.96" k="line_width"/>
         <prop v="MM" k="line_width_unit"/>
         <prop v="0" k="offset"/>
         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -55,7 +55,7 @@
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="outline 3 #001eff" force_rhr="0" tags="Fluor Outline" clip_to_extent="1" type="fill" alpha="1">
+    <symbol favorite="1" name="outline 3 #001eff" force_rhr="0" tags="Neon" clip_to_extent="1" type="fill" alpha="1">
       <layer class="SimpleLine" enabled="1" pass="0" locked="0">
         <prop v="square" k="capstyle"/>
         <prop v="5;2" k="customdash"/>
@@ -65,7 +65,7 @@
         <prop v="bevel" k="joinstyle"/>
         <prop v="0, 30, 255, 255" k="line_color"/>
         <prop v="solid" k="line_style"/>
-        <prop v="0.5" k="line_width"/>
+        <prop v="0.96" k="line_width"/>
         <prop v="MM" k="line_width_unit"/>
         <prop v="0" k="offset"/>
         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -82,7 +82,7 @@
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="outline 4 #d000ff" force_rhr="0" tags="Fluor Outline" clip_to_extent="1" type="fill" alpha="1">
+    <symbol favorite="1" name="outline 4 #d000ff" force_rhr="0" tags="Neon" clip_to_extent="1" type="fill" alpha="1">
       <layer class="SimpleLine" enabled="1" pass="0" locked="0">
         <prop v="square" k="capstyle"/>
         <prop v="5;2" k="customdash"/>
@@ -92,7 +92,7 @@
         <prop v="bevel" k="joinstyle"/>
         <prop v="208, 0, 255, 255" k="line_color"/>
         <prop v="solid" k="line_style"/>
-        <prop v="0.5" k="line_width"/>
+        <prop v="0.96" k="line_width"/>
         <prop v="MM" k="line_width_unit"/>
         <prop v="0" k="offset"/>
         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -109,7 +109,7 @@
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="outline 5 #e9ff40" force_rhr="0" tags="Fluor Outline" clip_to_extent="1" type="fill" alpha="1">
+    <symbol favorite="1" name="outline 5 #e9ff40" force_rhr="0" tags="Neon" clip_to_extent="1" type="fill" alpha="1">
       <layer class="SimpleLine" enabled="1" pass="0" locked="0">
         <prop v="square" k="capstyle"/>
         <prop v="5;2" k="customdash"/>
@@ -119,7 +119,7 @@
         <prop v="bevel" k="joinstyle"/>
         <prop v="233, 255, 64, 255" k="line_color"/>
         <prop v="solid" k="line_style"/>
-        <prop v="0.5" k="line_width"/>
+        <prop v="0.96" k="line_width"/>
         <prop v="MM" k="line_width_unit"/>
         <prop v="0" k="offset"/>
         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -136,7 +136,7 @@
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="outline 6 #2e8281" force_rhr="0" tags="Fluor Outline" clip_to_extent="1" type="fill" alpha="1">
+    <symbol favorite="1" name="outline 6 #2e8281" force_rhr="0" tags="Neon" clip_to_extent="1" type="fill" alpha="1">
       <layer class="SimpleLine" enabled="1" pass="0" locked="0">
         <prop v="square" k="capstyle"/>
         <prop v="5;2" k="customdash"/>
@@ -146,7 +146,7 @@
         <prop v="bevel" k="joinstyle"/>
         <prop v="46, 130,129, 255" k="line_color"/>
         <prop v="solid" k="line_style"/>
-        <prop v="0.5" k="line_width"/>
+        <prop v="0.96" k="line_width"/>
         <prop v="MM" k="line_width_unit"/>
         <prop v="0" k="offset"/>
         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -163,7 +163,7 @@
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="outline 7 #ed8337" force_rhr="0" tags="Fluor Outline" clip_to_extent="1" type="fill" alpha="1">
+    <symbol favorite="1" name="outline 7 #ed8337" force_rhr="0" tags="Neon" clip_to_extent="1" type="fill" alpha="1">
       <layer class="SimpleLine" enabled="1" pass="0" locked="0">
         <prop v="square" k="capstyle"/>
         <prop v="5;2" k="customdash"/>
@@ -173,7 +173,7 @@
         <prop v="bevel" k="joinstyle"/>
         <prop v="237, 131, 55, 255" k="line_color"/>
         <prop v="solid" k="line_style"/>
-        <prop v="0.5" k="line_width"/>
+        <prop v="0.96" k="line_width"/>
         <prop v="MM" k="line_width_unit"/>
         <prop v="0" k="offset"/>
         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -190,7 +190,7 @@
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="outline 8 #ed374c" force_rhr="0" tags="Fluor Outline" clip_to_extent="1" type="fill" alpha="1">
+    <symbol favorite="1" name="outline 8  #ed374c" force_rhr="0" tags="Neon" clip_to_extent="1" type="fill" alpha="1">
       <layer class="SimpleLine" enabled="1" pass="0" locked="0">
         <prop v="square" k="capstyle"/>
         <prop v="5;2" k="customdash"/>
@@ -200,7 +200,7 @@
         <prop v="bevel" k="joinstyle"/>
         <prop v="237, 55, 76, 255" k="line_color"/>
         <prop v="solid" k="line_style"/>
-        <prop v="0.5" k="line_width"/>
+        <prop v="0.96" k="line_width"/>
         <prop v="MM" k="line_width_unit"/>
         <prop v="0" k="offset"/>
         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -217,7 +217,7 @@
         </data_defined_properties>
       </layer>
     </symbol>
-    <symbol name="outline 9 #352242" force_rhr="0" tags="Fluor Outline" clip_to_extent="1" type="fill" alpha="1">
+    <symbol favorite="1" name="outline 9 #352242" force_rhr="0" tags="Neon" clip_to_extent="1" type="fill" alpha="1">
       <layer class="SimpleLine" enabled="1" pass="0" locked="0">
         <prop v="square" k="capstyle"/>
         <prop v="5;2" k="customdash"/>
@@ -227,7 +227,7 @@
         <prop v="bevel" k="joinstyle"/>
         <prop v="53, 34, 66, 255" k="line_color"/>
         <prop v="solid" k="line_style"/>
-        <prop v="0.5" k="line_width"/>
+        <prop v="0.96" k="line_width"/>
         <prop v="MM" k="line_width_unit"/>
         <prop v="0" k="offset"/>
         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -244,6 +244,7 @@
         </data_defined_properties>
       </layer>
     </symbol>
+
   </symbols>
   <colorramps/>
 </qgis_style>
