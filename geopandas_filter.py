@@ -16,12 +16,55 @@ import os
 import matplotlib.pyplot as plt
 import geopandas as gpd
 import pandas as pd
+import seaborn as sns
 
 os.chdir('D:/WORK/CIREN/')
 print(os.getcwd())
 
 suel = gpd.read_file('TEMPORALES/clip_suelo.shp')
 prop = gpd.read_file('TEMPORALES/clip_propiedades.shp')
+
+suel.boundary.plot(color='blue')
+prop.plot(color='red')
+
+# obtener listado de columnas
+list(suel)
+# obtener listado de valores unicos en la columna de interes
+print((suel.descvari).unique())
+# filtrar por la columna de interes
+# suel.loc[(suel.descvari=='CAJA DE ESTERO') |
+#           (suel.descvari=='CAJA DE RIO') |
+#           (suel.descvari=='MISCELANEO RIO') |
+#           (suel.descvari=='MISCELANEO RIO (1)')].plot(color='blue')
+
+suel2=suel.loc[suel.descvari.str.contains('\ACAJA*|\AMISCELANEO.RIO|\AMISCELANEO?RIO?(1)', case=False, regex=True)==True]
+
+# obtener listado de columnas
+list(prop)
+# obtener listado de valores unicos en la columna de interes
+([print(i) for i in (prop.rol).unique()])
+# no resulto demasiados valores unicos
+
+# filtrar por la columna de interes
+pro2 = prop.loc[prop.rol.str.contains('\ACAJA*|\ARIO*|\AESTERO*', case=False,regex=True)]
+
+pro2.rol.unique()
+
+#%% GRAFICOS A PARTIR DE CAPAS
+
+import os
+import matplotlib.pyplot as plt
+import geopandas as gpd
+import pandas as pd
+import seaborn as sns
+
+os.chdir('D:/WORK/CIREN/')
+print(os.getcwd())
+
+print("D:/WORK/CIREN/zOTROS/geopandas")
+cbn = gpd.read_file('D:/WORK/CIREN/zOTROS/geopandas/aa_cbn.gpkg')
+uh = gpd.read_file('zOTROS/geopandas/aa_uh.gpkg')
+
 
 suel.boundary.plot(color='blue')
 prop.plot(color='red')

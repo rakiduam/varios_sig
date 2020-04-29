@@ -71,19 +71,15 @@ file, path, cbn_ns, cbn_ns_aoi = None, None, None, None
 
 
 ### CATASTRO DE BOSQUE NATIVO
-file = os.listdir('D:/WORK/CIREN/CAPAS/01 CATASTRO CBN/')
-path = [os.path.join('D:/WORK/CIREN/CAPAS/01 CATASTRO CBN/', i) for i in file if ".shp" in i[-4:]]
+file = os.listdir('D:/WORK/CIREN/TEMPORALES/borrar/')
+path = [os.path.join('D:/WORK/CIREN/TEMPORALES/borrar/', i) for i in file if ".shp" in i[-4:]]
 path = list([path[-1],path[0],path[1]])
-cbn_ns = gpd.GeoDataFrame(pd.concat([gpd.read_file(i) for i in path],
+cbn = gpd.GeoDataFrame(pd.concat([gpd.read_file(i) for i in path],
                         ignore_index=True), crs=gpd.read_file(path[0]).crs)
-cbn_ns.to_file('TEMPORALES/merge_cbn.shp')
-cbn_ns_aoi = gpd.overlay(cbn_ns, aoi, how='intersection' )
-cbn_ns_aoi.to_file('TEMPORALES/clip_cbn.shp')
-file, path, cbn_ns, cbn_ns_aoi = None, None, None, None
-
-
-
-
+# cbn.to_file('TEMPORALES/merge/merge_cbn.shp')
+cbn_aoi = gpd.overlay(cbn, aoi, how='intersection')
+cbn_aoi.to_file('TEMPORALES/clip/clip_cbn.shp')
+file, path, cbn_ns, cbn_aoi = None, None, None, None
 
 
 # hidrofor
@@ -135,27 +131,27 @@ cbn_ns, cbn_ns_aoi = None, None
 
 
 
-suel2.plot()
+# suel2.plot()
 
-suel1  = None
-# suel1, suelo6, suelo7, suelo16  = None, None, None, None
-
-
+# suel1  = None
+# # suel1, suelo6, suelo7, suelo16  = None, None, None, None
 
 
 
-# cargar capas de propiedades para generar merge
-propiedades6 = gpd.read_file("CAPAS/02 SUELOS/suelos_ptorres BBDD_Completa/suelos10mil_06.shp")
-propiedades7 = gpd.read_file("CAPAS/02 SUELOS/suelos_ptorres BBDD_Completa/suelos10mil_07.shp")
-propiedades8 = gpd.read_file("CAPAS/02 SUELOS/suelos_ptorres BBDD_Completa/suelos10mil_16.shp")
 
-prop_aoi = gpd.overlay(prop2, aoi, how='intersection' )
 
-suel1.plot()
-suel2.plot()
+# # cargar capas de propiedades para generar merge
+# propiedades6 = gpd.read_file("CAPAS/02 SUELOS/suelos_ptorres BBDD_Completa/suelos10mil_06.shp")
+# propiedades7 = gpd.read_file("CAPAS/02 SUELOS/suelos_ptorres BBDD_Completa/suelos10mil_07.shp")
+# propiedades8 = gpd.read_file("CAPAS/02 SUELOS/suelos_ptorres BBDD_Completa/suelos10mil_16.shp")
 
-suel1.head()
-suel1.tail()
+# prop_aoi = gpd.overlay(prop2, aoi, how='intersection' )
+
+# suel1.plot()
+# suel2.plot()
+
+# suel1.head()
+# suel1.tail()
 
 
 

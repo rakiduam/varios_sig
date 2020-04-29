@@ -1,0 +1,16 @@
+GIMP Palette
+Name: RGB Colours
+Columns: 4
+# https://www.w3schools.com/colors/colors_wheels.asp
+255   0   0  #FF0000 RED
+255 128   0  #FF8000 ORANGE
+255 255   0  #FFFF00 YELLOW
+128 255   0  #80FF00
+  0 255   0  #00FF00 GREEN
+  0 255 128  #00FF80
+  0 255 255  #00FFFF CYAN
+  0 128 255  #0080FF
+  0   0 255  #0000FF BLUE
+128   0 255  #8000FF 
+255   0 255  #FF00FF MAGENTA
+255   0 128  #FF0080

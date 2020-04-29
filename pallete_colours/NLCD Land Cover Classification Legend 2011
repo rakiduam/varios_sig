@@ -1,4 +1,7 @@
-NLCD Land Cover Classification Legend
+GIMP Palette
+Name: NLCD Land Cover Classification Legend
+Columns: 4
+#
  72  109  162  #486da2 11 Open Water
 231  239  252  #e7effc 12 Perennial Ice/Snow
 225  205  206  #e1cdce 21 Developed, Open Space
