@@ -38,6 +38,7 @@ for imagen in lista:
     with zipfile.ZipFile(imagen+'.zip', 'w', compression=zipfile.ZIP_DEFLATED) as my_zip:
         for ext in tipos:
             # chequea archivo existe, sino lo salta.
-            print(('').join(glob.glob(imagen + '*' + ext)))
-            if os.path.exists(('').join(glob.glob(imagen + '*' + ext))):
-                my_zip.write(('').join(glob.glob(imagen + '*' + ext)))
+            archivo = ('').join(glob.glob(imagen + '*' + ext))
+            print(archivo)
+            if os.path.exists(archivo):
+                my_zip.write(archivo)
