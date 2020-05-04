@@ -12,10 +12,18 @@ Queda evaluar algun otro metodo de mejor compresión.
 @author: fanr
 """
 # carga de modulos
-import zipfile, os, glob
+import zipfile, os, glob, tarfile
+
+import zipfile
+try:
+    import zlib
+    mode= zipfile.ZIP_DEFLATED
+except:
+    mode= zipfile.ZIP_STORED
+
 
 # directorio entrada, comprimira todo lo que hay dentro de dicho directorio
-entDIR = 'D:/rugosidad/5x5'
+entDIR = 'E:/ORIGINALES/DEM_5m/'
 
 # vecinos = str(n) +'x' + str(n)
 os.chdir(entDIR)
@@ -28,8 +36,12 @@ lista = set([str(i).split('.')[0] for i in glob.glob('**/*.*', recursive=True)])
 # existe la opcion del endswith, pero implica saber largo del texto
 tipos = set([str(i).split('.')[-1] for i in glob.glob('*.*')])
 
+# evita agregar archivos ya comprimidos
+no_tipos = (['zip', 'tar', 'gz', 'rar', '7z'])
+
 # es muy probable que pandas tenga una funcion que haga un mix entre ambas variables
 # en este instante estan seteadas como diccionarios{} y no listas[]
+# https://docs.python.org/3.7/library/stdtypes.html#set-types-set-frozenset
 print(lista, tipos)
 
 # comprimir en archivos zip, separados.
@@ -40,5 +52,17 @@ for imagen in lista:
             # chequea archivo existe, sino lo salta.
             archivo = ('').join(glob.glob(imagen + '*' + ext))
             print(archivo)
-            if os.path.exists(archivo):
+            # si existe archivo y no es un comprimido.
+            if os.path.exists(archivo) and not ext in no_tipos:
                 my_zip.write(archivo)
+
+
+## no funciona esta parte
+## formato tar.gz se supone que debe comprimir ligeramente mas que el zip
+# for imagen in lista:
+#     with tarfile.TarFile((imagen+ ".tar.bz2"), "w:gz") as tar:
+#         for ext in tipos:
+#             # chequea archivo existe, sino lo salta.
+#             archivo = ('').join(glob.glob(imagen + '*' + ext))
+#             print(archivo)
+#             if os.path.exists(archivo) and not ext in no_tipos: tar.add(archivo)
