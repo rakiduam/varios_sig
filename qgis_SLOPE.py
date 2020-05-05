@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-idea general, ejecutar calculo de pendiente en porcentajes a partir de un dem
-proceso automatico de renombre de archivos, solo necesita que existan carpeta
-de entrada y salida.
+idea general:
+ejecutar calculo recursivo de pendiente en porcentajes a partir de un dem.
+- estima dem en porcentajes
+- lo hace mediante qgis/gdal
+- mantiene nombre original, "slope_NombreOriginal.tif"
+- necesita solo cambiar carpeta de entrada y salida
+- agrega archivo piramidal, en archivo externo
+
+@author: fanr
 """
+
 import subprocess, glob
 
 # directorios
@@ -27,10 +34,10 @@ cmd =[("").join(['gdaldem slope ', i, ' ', (lambda x: ('').join([ outDIR,'slope_
 for i in cmd:
     # print(i)
     subprocess.run(str(i))
-    print(('').join([str(i), '\t...listo']))
+    # print(('').join([str(i), '\t...listo']))
 
 
 cmd2 = [('').join(['gdaladdo ', str(i), ' -r nearest -ro 2 4 8 16']) for i in glob.glob(outDIR + '*.tif')]
 for i in cmd2:
     subprocess.run(str(i))
-    print(('').join([str(i), '\t...listo']))
+    # print(('').join([str(i), '\t...listo']))

@@ -2,11 +2,14 @@
 """
 Created on Wed Apr 29 21:39:05 2020
 
-script rapido para renombrar multiples archivos con el mismo patron de nombre
-en este caso, es solo eliminar aquellos caracteres errorneos en el nombre
+script para renombrar multiples archivos con distintas extensiones, pero
+que comparte el mismo patron de nombres.
+
+- limpiar caracteres extraños
 
 @author: fanr
 """
+
 import glob
 import os
 from os import path
@@ -30,10 +33,14 @@ def limpieza(x):
 
 
 geotif_list = glob.glob('*.*')
+
+# excepcion a los nombres de datos.
 geotif_list = [(str(i).replace('Estero_Nilahue_Parcial', 'Rio_Reloca_xxxx'))[:-4] for i in geotif_list]
 
 geotif_list.sort()
 
+# se genera un dataframe, para agregar columnas que permitan el comparar
+# nombre original y renombreado.
 df = pd.DataFrame(set(geotif_list))
 df.columns = ['archivos']
 df['limpio'] = [limpieza(i) for i in df.archivos]

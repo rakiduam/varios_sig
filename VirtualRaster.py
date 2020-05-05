@@ -2,6 +2,8 @@
 """
 Created on Sun May  3 23:51:52 2020
 
+tratar de generar un raster virtual a partir de los archivos ascii de lidar
+
 @author: fneir
 """
 

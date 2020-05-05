@@ -1,3 +1,5 @@
+## NO FUNCIONA para dichas capas
+
 # We will locate all the .shp files in the data directory and hand them to the
 # saga:mergeshapeslayers object in order to merge them.
 
