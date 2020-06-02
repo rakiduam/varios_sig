@@ -15,6 +15,7 @@ import os
 from os import path
 import pandas as pd
 os.chdir('E:/ORIGINALES/DEM_1m/')
+# os.chdir('E:/ESTACIONES_CORRECCION/BBDD/downthemall/')
 os.getcwd()
 
 def limpieza(x):
@@ -36,6 +37,7 @@ geotif_list = glob.glob('*.*')
 
 # excepcion a los nombres de datos.
 geotif_list = [(str(i).replace('Estero_Nilahue_Parcial', 'Rio_Reloca_xxxx'))[:-4] for i in geotif_list]
+# geotif_list = [(str(i).replace('.', ''))[:-3] for i in geotif_list]
 
 geotif_list.sort()
 

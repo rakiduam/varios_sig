@@ -1,0 +1,62 @@
+<Layout units="mm" worldFileMap="" printResolution="300" name="prueba">
+ <Snapper snapToGuides="1" snapToItems="1" tolerance="5" snapToGrid="0"/>
+ <Grid resolution="10" resUnits="mm" offsetX="0" offsetUnits="mm" offsetY="0"/>
+ <PageCollection>
+  <symbol type="fill" clip_to_extent="1" force_rhr="0" alpha="1" name="">
+   <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+    <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+    <prop k="color" v="255,255,255,255"/>
+    <prop k="joinstyle" v="miter"/>
+    <prop k="offset" v="0,0"/>
+    <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+    <prop k="offset_unit" v="MM"/>
+    <prop k="outline_color" v="35,35,35,255"/>
+    <prop k="outline_style" v="no"/>
+    <prop k="outline_width" v="0.26"/>
+    <prop k="outline_width_unit" v="MM"/>
+    <prop k="style" v="solid"/>
+    <data_defined_properties>
+     <Option type="Map">
+      <Option type="QString" value="" name="name"/>
+      <Option name="properties"/>
+      <Option type="QString" value="collection" name="type"/>
+     </Option>
+    </data_defined_properties>
+   </layer>
+  </symbol>
+  <LayoutItem id="" visibility="1" positionLock="false" opacity="1" position="0,0,mm" zValue="0" size="420,297,mm" positionOnPage="0,0,mm" excludeFromExports="0" frame="false" referencePoint="0" blendMode="0" background="true" templateUuid="{d62f55b3-61d0-4e29-af68-c148e5a65a1a}" type="65638" uuid="{d62f55b3-61d0-4e29-af68-c148e5a65a1a}" groupUuid="" frameJoinStyle="miter" outlineWidthM="0.3,mm" itemRotation="0">
+   <FrameColor red="0" blue="0" green="0" alpha="255"/>
+   <BackgroundColor red="255" blue="255" green="255" alpha="255"/>
+   <LayoutObject>
+    <dataDefinedProperties>
+     <Option type="Map">
+      <Option type="QString" value="" name="name"/>
+      <Option name="properties"/>
+      <Option type="QString" value="collection" name="type"/>
+     </Option>
+    </dataDefinedProperties>
+    <customproperties/>
+   </LayoutObject>
+  </LayoutItem>
+  <GuideCollection visible="1">
+   <Guide page="0" position="287" units="mm" orientation="1"/>
+   <Guide page="0" position="10" units="mm" orientation="1"/>
+   <Guide page="0" position="0" units="mm" orientation="1"/>
+   <Guide page="0" position="297" units="mm" orientation="1"/>
+   <Guide page="0" position="0" units="mm" orientation="2"/>
+   <Guide page="0" position="10" units="mm" orientation="2"/>
+   <Guide page="0" position="410" units="mm" orientation="2"/>
+   <Guide page="0" position="420" units="mm" orientation="2"/>
+   <Guide page="0" position="5" units="mm" orientation="1"/>
+   <Guide page="0" position="292" units="mm" orientation="1"/>
+   <Guide page="0" position="5" units="mm" orientation="2"/>
+   <Guide page="0" position="415" units="mm" orientation="2"/>
+   <Guide page="0" position="210" units="mm" orientation="2"/>
+   <Guide page="0" position="148.5" units="mm" orientation="1"/>
+  </GuideCollection>
+ </PageCollection>
+ <customproperties>
+  <property key="atlasRasterFormat" value="png"/>
+ </customproperties>
+ <Atlas enabled="0" coverageLayer="" hideCoverage="0" filterFeatures="0" filenamePattern="'output_'||@atlas_featurenumber" sortFeatures="0" pageNameExpression=""/>
+</Layout>
